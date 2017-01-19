@@ -1,10 +1,9 @@
 # Below I provide details for each version
-### Each has its own folder and some example output files with appropriate names to differentiate
-### To run the code just use the format I discuss for each version under 'Command line input'
-### V2 and above will require NLTK (Natural Language Toolkit)
-
-### Example input for V4 
-#### python word_parser_v2.py lower 1000 alice30.txt word_count.txt
+### I. Each has its own folder and some example output files with appropriate names to differentiate
+### II. To run the code just use the format I discuss for each version under 'Command line input'
+### III. V2 and above will require NLTK (Natural Language Toolkit)
+### IV. Example input for V4:
+#### python word_parser_v4.py lower 1000 alice30.txt word_count.txt
 
 # V1
 ### Assumptions

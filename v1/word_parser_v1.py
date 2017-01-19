@@ -5,7 +5,7 @@ import sys
 def GetWordsFromFile(filename):
     data = open(filename, 'r')
     text = data.read().lower()
-    words = re.findall(r'[a-zA-Z]+(?:(?:\-|\')[a-zA-Z]+)?', text)
+    words = re.findall(r'[a-z]+(?:(?:\-|\')[a-z]+)?', text)
     text = None
     word_dict = {}
     for word in words:

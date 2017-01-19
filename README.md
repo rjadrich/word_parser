@@ -20,3 +20,21 @@
 ### Command line input
 #### python word_parser_v2.py case_option input_file output_file
 #### case_option = {none, lower}
+
+# V4
+### New stuff
+#### (1) Added the ability to chunk the file into reasonable sized portions for processing
+##### This uses a generator to only keep that portion in memory for processing; however, it comes at the cost of possibly getting garbage words due to splitting the file.
+##### The larger the chunks the less of an issue this will be of course. Such issues are also present when using technologies like MapReduce. 
+##### I have not programmed the thing to balance the chunks so the final one may be very short.
+##### Input chunk size is in bytes 
+### Command line input
+#### python word_parser_v2.py case_option chunk_size input_file output_file
+#### case_option = {none, lower}
+#### chunk_size = {5 or greater}
+
+# Things that should be done
+#### (1) Add the ability to hande text encodings like UTF-8. Right now it assume ASCII
+#### (2) Could parallelize the chunking step 
+#### (3) Add options for including numbers and alpha-numeric quantities
+#### (4) Enable the user to provide a pre-specified dictionary of valid words

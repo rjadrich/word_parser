@@ -44,7 +44,7 @@
 ### New stuff
 #### (1) New feature to only find words with a given prefix
 ##### This exploits a 'tries' like data structure that I created from scratch using nested dictionaries.
-##### PLEASE SEE: 'test_notebook_for_parser.ipynb' for a full demonstration / explanation of the 'tries' structure.
+##### PLEASE SEE: 'test_notebook_for_parser.ipynb' for a full demonstration / explanation of the 'tries' structure. I suggest following [this link](https://nbviewer.jupyter.org/github/rjadrich/word_parser/blob/master/test_notebook_for_parser.ipynb) to view the notebook online in an optimal fashion due to the large print outs.
 ### Command line input
 #### python word_parser_v2.py 'case_option' 'chunk_size' 'input_file' 'output_file' 'prefix'
 #### case_option = {none, lower}

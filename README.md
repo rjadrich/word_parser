@@ -40,6 +40,17 @@
 #### case_option = {none, lower}
 #### chunk_size = {5 or greater}
 
+# V5
+### New stuff
+#### (1) New feature to only find words with a given prefix
+##### This exploits a 'tries' like data structure that I created from scratch using nested dictionaries.
+##### PLEASE SEE: 'test_notebook_for_parser.ipynb' for a full demonstration / explanation of the 'tries' structure.
+### Command line input
+#### python word_parser_v2.py 'case_option' 'chunk_size' 'input_file' 'output_file' 'prefix'
+#### case_option = {none, lower}
+#### chunk_size = {5 or greater}
+#### prefix = {any sequence of letters}
+
 # Things that should be done
 #### (1) Add the ability to hande text encodings like UTF-8. Right now it assume ASCII
 #### (2) Could parallelize the chunking step 
